@@ -1,0 +1,68 @@
+.text {
+  font-size: 16px;
+}
+
+.text__name {
+  font-weight: 500;
+}
+
+.buttonsWrapper {
+  display: flex;
+}
+
+.contactsBtn {
+  background-image: linear-gradient(#323ff1, #1f2df8);
+  color: #fff;
+
+  border-radius: 6px;
+  border: 1px rgb(139, 139, 139) solid;
+  padding: 6px 8px;
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.3);
+}
+
+.contactsBtn + .contactsBtn {
+  margin-left: 10px;
+}
+
+.contactsBtn:hover {
+  background-image: linear-gradient(#2e0cee, #351ff8);
+  text-decoration: none;
+}
+
+.contactsBtn:active {
+  background-image: linear-gradient(#230ca3, #1a0ba5);
+  outline: none;
+}
+
+.contactsBtnIcon {
+  fill: #ffffff;
+
+  width: 10px;
+  height: 10px;
+}
+
+@media screen and (min-width: 510px) {
+  .contactsBtn {
+    font-size: 16px;
+  }
+  .text {
+    font-size: 20px;
+  }
+
+  .contactsBtnIcon {
+    fill: #ffffff;
+
+    width: 15px;
+    height: 15px;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.delText {
+  padding-right: 5px;
+}

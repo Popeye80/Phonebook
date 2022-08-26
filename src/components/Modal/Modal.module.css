@@ -1,0 +1,99 @@
+/*
+ * Стили компонента Modal
+ */
+
+.Overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.Modal {
+  border-radius: 10px;
+}
+
+.form {
+  background-color: #c5d3fc;
+  border: 1px solid #000;
+  border-radius: 10px;
+  margin: 0 20px;
+  padding: 30px;
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.label {
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.inputName {
+  display: block;
+  margin-left: 30px;
+  padding: 5px;
+  width: 100%;
+}
+
+.inputNumber {
+  display: block;
+  margin-left: 10px;
+  padding: 5px;
+  width: 100%;
+}
+
+.addBtn {
+  width: 100%;
+  margin-top: 30px;
+  border-radius: 6px;
+  border: 1px rgb(139, 139, 139) solid;
+
+  padding: 10px;
+
+  background-image: linear-gradient(#323ff1, #1f2df8);
+  box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.3);
+
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  opacity: 1;
+}
+
+.addBtn:hover {
+  background-image: linear-gradient(#2e0cee, #351ff8);
+  text-decoration: none;
+}
+
+.addBtn:active {
+  background-image: linear-gradient(#230ca3, #1a0ba5);
+  outline: none;
+}
+
+@media screen and (min-width: 510px) {
+  .form {
+    width: 350px;
+    margin: 0;
+  }
+
+  .label {
+    font-style: 20px;
+  }
+
+  .inputName,
+  .inputNumber {
+    width: 240px;
+  }
+}
